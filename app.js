@@ -1,3 +1,4 @@
+/* 0418 Object
 const player = {
     name: "nico",
     points: 10,
@@ -5,5 +6,9 @@ const player = {
 };
 
 console.log(player.name);
-console.log(player.points);
-console.log(player.fat);
+*/
+
+const title = document.querySelector(".hello h1");
+console.log(title.innerHTML);
+title.innerHTML = "BYE";
+console.log(title.innerHTML);
