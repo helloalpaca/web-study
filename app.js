@@ -15,6 +15,7 @@ title.innerHTML = "BYE";
 console.log(title.innerHTML);
 */
 
+/*
 // events 
 const h1 = document.querySelector(".hello h1");
 
@@ -72,3 +73,36 @@ window.addEventListener("resize", handleWindowResize);
 window.addEventListener("copy", handleWindowCopy);
 window.addEventListener("offline", handleWindowOffline);
 window.addEventListener("online", handleWindowOnline);
+*/
+const loginForm = document.querySelector("#login-form");
+const loginInput = loginForm.querySelector("input");
+const loginBtn = loginForm.querySelector("button");
+const greeting = document.querySelector("#greeting");
+
+const HIDDEN_CLASSNAME = "hidden";
+const USERNAME_KEY = "username";
+
+const savedUsername = localStorage.getItem(USERNAME_KEY);
+
+if (savedUsername === null) {
+    //show the form
+    loginForm.classList.remove(HIDDEN_CLASSNAME);
+    loginForm.addEventListener("submit", onLoginSubmit);
+} else {
+    // show the greetings
+    paintGreetings(savedUsername);
+}
+
+function paintGreetings(username) {
+    greeting.classList.remove(HIDDEN_CLASSNAME);
+    greeting.innerText = `Hello ${username}`;
+}
+
+function onLoginSubmit(event) {
+    event.preventDefault();
+
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    const username = loginInput.value;
+    paintGreetings(username);
+    localStorage.setItem("username", username);
+}
