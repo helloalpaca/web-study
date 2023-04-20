@@ -11,3 +11,4 @@ Chrome Todo App made by VanillaJS & HTML & CSS
 2. querySelector("#idName") 
     - querySelector("#hello h1")
 3. querySelectorAll()
+4. addEventListener("click", functionName)
