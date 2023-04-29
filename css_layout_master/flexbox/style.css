@@ -1,0 +1,44 @@
+.father {
+    /* 1. flex-direction의 기본 값은 row */
+    /* 2. row일 때 mainAxis는 x축, crossAxis는 y축 */
+    display: flex;
+    /* flex-direction: column; */
+    /* 3. main Axis */
+    justify-content: space-around;
+    /* 4. cross Axis */
+    /* align-items: center; */
+    /* 5. align-self == align-items */
+    /* height: 300px; */
+    /* 6. flex-wrap에서 nowrap은 무조건 한줄 유지, wrap은 자식의 사이즈 고려 */
+    flex-wrap: wrap;
+    /* 7. align-content */
+    /* align-content: space-between; */
+    /* height: 100vh; */
+}
+
+/* 8. flex-shrink의 default는 1, 2면 다른 1인 요소보다 두배이상 줄어든다. */
+/* 9. flex-grow */
+/* 10. flex-basis는 grow, shrink 되기전 기본 값을 준다, main Axis에 작용 */
+.child {
+    flex-basis: 30%;
+    background: peru;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child:nth-child(2) {
+    flex-grow: 1;
+    color: white;
+    background-color: black;
+}
+
+/* .child:nth-child(2) {
+    align-self: center;
+}
+
+.child:nth-child(3) {
+    align-self: flex-end;
+} */
