@@ -10,32 +10,33 @@
 
 </head>
 
+<!-- Requirements4.  랜덤 배경 이미지-->
+
 <body>
+    <!-- Requirements2.  로컬스토리지를 사용한 로그인 -->
+    <h1 id="greeting" class="greeting">Please, SIGN IN</h1>
     <form id="login-form" class="hidden">
-        <input value="default value" placeholder="hello world" />
+        <input placeholder="your name" />
         <button>submit</button>
     </form>
-    <h2 id="clock">00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
+    <!-- Requirements1.  시계 -->
+    <h2 class="clock">00:00</h2>
+    <!-- Requirements5. 날씨와 위치 -->
+    <div class="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <!-- Requirements2.  로컬스토리지를 사용한 투두리스트 -->
+    <div class="todotitle">TODO LIST</div>
+    <form id="todo-form" class="todo">
         <input type="text" placeholder="Write a todo" required>
     </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-        <span></span>
-        <span></span>
-    </div>
-    <div id="weather">
-        <span></span>
-        <span></span>
-    </div>
-    <!-- <a href="https://nomadcoders.co">Go to Link</a> -->
-    <script src="./js/app.js"></script>
-    <script src="./js/clock.js"></script>
-    <script src="./js/quotes.js"></script>
+    <ul id="todo-list" class="todolist"></ul>
+    <script src="./js/index.js"></script>
     <script src="./js/background.js"></script>
-    <script src="./js/todo.js"></script>
+    <script src="./js/clock.js"></script>
     <script src="./js/weather.js"></script>
+    <script src="./js/todo.js"></script>
 </body>
 
 </html>

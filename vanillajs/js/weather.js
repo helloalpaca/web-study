@@ -1,7 +1,7 @@
 const API_KEY = "6426e356d0194ee19904be09402c8d50";
 
-const weather = document.querySelector(".weather span:first-child");
-const city = document.querySelector(".weather span:last-child");
+const weather = document.querySelector("#weather span:first-child");
+const city = document.querySelector("#weather span:last-child");
 
 function onGeoSuccess(position) {
     const lat = position.coords.latitude;

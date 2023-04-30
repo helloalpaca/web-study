@@ -1,19 +1,42 @@
 body {
-    background-color: beige;
+    text-align: center;
 }
 
-h1 {
-    color: black;
+.clock {
+    display: block;
+    color: white;
+    font-size: 96px;
 }
 
-.clicked {
-    color: tomato;
-}
-
-.sexy-font {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.weather {
+    display: block;
+    color: white;
+    font-size: 48px;
 }
 
 .hidden {
     display: none;
+}
+
+.greeting {
+    display: block;
+    color: white;
+}
+
+.todo {
+    margin-top: 50px;
+}
+
+.todotitle {
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+.todolist {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 50px;
 }
