@@ -1,42 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Momentum</title>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<!-- Requirements4.  랜덤 배경 이미지-->
-
 <body>
-    <!-- Requirements2.  로컬스토리지를 사용한 로그인 -->
-    <h1 id="greeting" class="greeting">Please, SIGN IN</h1>
-    <form id="login-form" class="hidden">
-        <input placeholder="your name" />
-        <button>submit</button>
-    </form>
-    <!-- Requirements1.  시계 -->
-    <h2 class="clock">00:00</h2>
-    <!-- Requirements5. 날씨와 위치 -->
-    <div class="weather">
-        <span></span>
-        <span></span>
+
+    <div class="poster">
+        <div class="header">
+            <h1>Paris</h1>
+            <p>06.</p>
+        </div>
+        <div class="detail">
+            <div class="country">
+                <p>country</p>
+                <p>france</p>
+                <p>population</p>
+                <p>2.249.976</p>
+                <p>coordinates</p>
+                <p>45`51`24`N</p>
+                <p>2,21,03,E</p>
+            </div>
+            <div class="colours">
+                <p>COLOURS</p>
+                <p>O2S MO YO KO</p>
+                <P>O0 MO YO K74</P>
+                <P>0100 MO YBK KO</P>
+            </div>
+            <div class="url">
+                <p>wwww.NIOKBARCLAYDESIGNS</p>
+            </div>
+        </div>
+
+        <div class="flexbox">
+            <div class="circle first"></div>
+            <div class="circle first"></div>
+            <div class="circle first"></div>
+            <div class="circle second"></div>
+            <div class="circle second"></div>
+            <div class="circle second"></div>
+            <div class="circle third"></div>
+            <div class="circle third"></div>
+            <div class="circle third"></div>
+        </div>
     </div>
-    <!-- Requirements2.  로컬스토리지를 사용한 투두리스트 -->
-    <div class="todotitle">TODO LIST</div>
-    <form id="todo-form" class="todo">
-        <input type="text" placeholder="Write a todo" required>
-    </form>
-    <ul id="todo-list" class="todolist"></ul>
-    <script src="./js/index.js"></script>
-    <script src="./js/background.js"></script>
-    <script src="./js/clock.js"></script>
-    <script src="./js/weather.js"></script>
-    <script src="./js/todo.js"></script>
+
 </body>
 
 </html>
