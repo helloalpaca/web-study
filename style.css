@@ -1,84 +1,74 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
 body {
-    background-color: #F6F6F6;
-    padding: 50px 25px;
+    background-color: #DDE1D4;
+    padding: 15px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    max-width: 770px;
+    max-width: 650px;
     width: 100%;
+    height: 100vh;
     margin: 0 auto;
 }
 
-.poster {
-    /* A4: 210 * 297 비율 조정 */
-    width: 630px;
-    height: 891px;
-    border: 1px solid black;
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr 3fr;
+    grid-template-rows: 60px 400px 400px;
+    grid-gap: 10px;
+    height: 80px;
 }
 
-.flexbox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+.box1 {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    grid-template-columns: 2fr 3fr 1fr 3fr;
+    padding: 10px;
+    align-items: end;
+    justify-content: left;
+    background-color: black;
+    color: white;
 }
 
-.circle {
-    flex-basis: 25%;
-    padding-bottom: 25%;
-    margin: 10px;
-    border-radius: 100%;
+.box1 div:nth-child(4) {
+    padding-left: 20px;
 }
 
-.first {
-    background-color: #BCE0F2;
-}
+.box2 {
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    background-color: orangered;
+    padding: 10px;
 
-.second {
-    background-color: #616365;
-}
-
-.third {
-    background-color: #04A565;
-}
-
-.header {
-    display: flex;
-    margin: 0px 5% 0px 5%;
-    border-bottom: 1px solid black;
-    padding-bottom: 2%;
-    justify-content: space-between;
     align-items: end;
 }
 
-.header h1 {
-    display: inline-block;
-    font-size: 108px;
+
+.box3 {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    background-color: orangered;
 }
 
-.header p {
-    display: inline-block;
-    font-size: 36px;
+.box4 {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    background-color: orangered;
+    padding: 10px;
 }
 
-.detail {
-    display: flex;
-    font-size: 8px;
-    align-items: baseline;
-    margin: 2% 5% 15% 5%;
-    justify-content: space-between;
+.txt-big {
+    font-size: 11rem;
+    font-weight: bold;
+    color: black;
 }
 
-.detail .country {
-    flex-grow: 1;
-    display: inline-block;
+.txt-white {
+    font-size: 2.25rem;
+    color: white;
 }
 
-.detail .colours {
-    flex-grow: 4;
-    display: inline-block;
-}
-
-.detail .url {
-    display: inline-block;
+.mt-4 {
+    margin-top: 4rem;
 }
