@@ -1,6 +1,7 @@
-# MOMENTUM
+# Nomad-Coders Study Repo
 
-Chrome Todo App made by VanillaJS & HTML & CSS
+1. Chrome Todo App made by VanillaJS & HTML & CSS
+2. Css Layout MasterClass
 
 2023.04.17 ~
 
