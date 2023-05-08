@@ -1,0 +1,76 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+    background-color: #DDE1D4;
+    padding: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.container {
+    display: grid;
+    height: 50vh;
+    grid-template:
+        "first first second second" 1fr
+        "first first second second" 1fr
+        "third third fourth fifth" 1fr
+        "third third sixth seventh" 1fr;
+}
+
+.ostrich {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+.ostrich-s {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.beige {
+    grid-area: first;
+    background-color: beige;
+    color: orange;
+}
+
+.green {
+    grid-area: second;
+    background-color: green;
+    color: white;
+}
+
+.orange {
+    grid-area: third;
+    background-color: orange;
+    color: beige;
+}
+
+.pink {
+    grid-area: fourth;
+    background-color: palevioletred;
+    color: orange;
+}
+
+.purple {
+    grid-area: fifth;
+    background-color: purple;
+    color: white;
+}
+
+.yellow {
+    grid-area: sixth;
+    background-color: yellow;
+    color: orange;
+}
+
+.plum {
+    grid-area: seventh;
+    background-color: plum;
+    color: white;
+}
