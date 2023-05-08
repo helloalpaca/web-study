@@ -1,0 +1,88 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    width: 800px;
+    height: 600px;
+    grid-template:
+        "logo box1 speakers artists" 1fr
+        "nav box2 speakers artists" 1fr
+        "nav box3 speakers artists" 1fr / 1fr 1fr 1fr 1fr;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: black;
+    color: white;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: red;
+    color: black;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.box1 {
+    grid-area: box1;
+    background-color: blueviolet;
+}
+
+.box2 {
+    grid-area: box2;
+    background-color: white;
+}
+
+.box3 {
+    grid-area: box3;
+    background-color: yellow;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.speakers {
+    grid-area: speakers;
+    padding: 5px;
+    overflow: auto;
+}
+
+.highlight {
+    background-color: blueviolet;
+}
+
+.speakers p,
+.artists p {
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.artists {
+    grid-area: artists;
+}
+
+.title {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* .changes {
+    display: inline-block;
+    font-size: 24px;
+}
+
+.rotate90 {
+    display: inline-block;
+    transform: rotate(180deg);
+    margin: 0px;
+    padding: 0px;
+} */
