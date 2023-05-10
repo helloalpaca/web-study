@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');
+@import 'button.css';
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.f-sm {
+    font-size: 1rem;
+}
+
+.f-base {
+    font-size: 1.5rem;
+}
+
+.f-lg {
+    font-size: 2rem;
+}
+
+.f-200 {
+    font-weight: 200;
+}
+
+.f-400 {
+    font-weight: 400;
+}
+
+.f-600 {
+    font-weight: 600;
+}
+
+.f-800 {
+    font-weight: 800;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.m-2 {
+    margin: 2rem;
+}

@@ -1,30 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="global.css" rel="stylesheet" type="text/css" />
+    <title>1조 | CSS 공통 컴포넌트</title>
 </head>
 
 <body>
-    <div class="grid">
-        <div class="box1">
-            <div>upcoming<br /> all ages hardcore</div>
-            <div>at the eagles lodge schenectady, new york</div>
-            <div></div>
-            <div>hope to see you there wednesday, june 27 1990</div>
-        </div>
-        <div class="box2">
-            <div class="txt-big">bad</div>
-        </div>
-        <div class="box3"></div>
-        <div class="box4">
-            <div class="txt-big">religion</div>
-            <div class="txt-white mt-4">with<br />jawbreaker & glee club</div>
-        </div>
+
+    <h1>공통 컴포넌트</h1>
+
+    <div class="f-sm">
+        텍스트
     </div>
+    <hr />
+    <div class="f-sm">
+        [f-sm] FONT SIZE: 1rem;
+    </div>
+    <div class="f-base">
+        [f-base] FONT SIZE: 1.5rem;
+    </div>
+    <div class="f-lg">
+        [f-lg] FONT SIZE: 2rem;
+    </div>
+    <div class="mt-2"></div>
+    <div class="f-sm f-200">
+        [f-sm f-200] FONT SIZE: 1rem;
+    </div>
+    <div class="f-sm f-400">
+        [f-sm f-400] FONT SIZE: 1rem;
+    </div>
+    <div class="f-sm f-600">
+        [f-sm f-600] FONT SIZE: 1rem;
+    </div>
+    <div class="f-sm f-800">
+        [f-sm f-800] FONT SIZE: 1rem;
+    </div>
+    <div class="mt-2"></div>
+    <div class="f-lg">
+        버튼
+    </div>
+    <hr />
+    <button class="btn">
+        BUTTON
+    </button>
+    <div class="mt-2"></div>
+    <button class="btn btn-primary">
+        PRIMARY
+    </button>
+    <div class="mt-2"></div>
+    <button class="btn btn-danger f-sm f-600">
+        DANGER
+    </button>
+
+    <div class="mt-2"></div>
+    <div class="f-lg">페이지 이동</div>
+    <hr />
+    <a class="btn" href="./css_layout_challenge/day2/index.html">
+        a태그
+    </a>
+    <div class="mt-2"></div>
+    <a class="btn btn-primary" href="./css_layout_challenge/day3/index.html">
+        day 3
+    </a>
 </body>
 
 </html>
