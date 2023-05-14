@@ -1,0 +1,69 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    color: black;
+}
+
+header div {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    padding: 0 20px;
+}
+
+header div p {
+    padding: 10px;
+}
+
+/* 메인 */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-rows: 400px;
+    grid-auto-rows: 400px;
+}
+
+.art {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 0 20px;
+}
+
+.art .image-wrapper {
+    width: 400px;
+    height: 200px;
+}
+
+.art .image-wrapper img {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.art-info {
+    display: flex;
+    width: 100%;
+    /* height: 100%;  */
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    color: black;
+}
