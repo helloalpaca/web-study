@@ -1,0 +1,123 @@
+header {
+    position: relative;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    /* header에 flex 추가, h1과 util에 absolute 삭제 */
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    padding: 0 0 0 26px;
+}
+
+header h1 a {
+    display: block;
+    width: 99px;
+    height: 69px;
+    background: url("../../img/LOGO.png") no-repeat center;
+    background-size: contain;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    text-align: center;
+    font-size: 0;
+}
+
+header nav ul li a {
+    padding: 0 24px;
+    line-height: 69px;
+    font-size: 18px;
+    color: black;
+}
+
+header .util a {
+    display: inline-block;
+    position: relative;
+    padding: 0 18px;
+    font-size: 12px;
+    color: #333;
+    vertical-align: middle;
+}
+
+header .util a~a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 9px;
+    transform: translateY(-50%);
+    background-color: black;
+}
+
+header .util button {
+    width: 60px;
+    height: 69px;
+    background: url("../../img/btn_search.png") no-repeat center #E71D36;
+    vertical-align: middle;
+}
+
+main {
+    display: block;
+    height: calc(100vh - 71px);
+    background: #ccc;
+    line-height: calc(100vh - 71px);
+    text-align: center;
+    font-size: 50px;
+    color: black;
+}
+
+header .hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+header .hamburger button {
+    width: 60px;
+    height: 69px;
+    background: url("../../img/btn_nav4.png") no-repeat center;
+    color: #043285;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        /* background-color: #043285; */
+    }
+
+    header .util {
+        display: none;
+    }
+
+    header .hamburger {
+        display: block;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        position: absolute;
+        top: 69px;
+        width: 100%;
+        background-color: white;
+    }
+
+    header nav ul {
+        display: none;
+        z-index: 5;
+    }
+
+    header nav ul.active {
+        display: flex;
+        flex-direction: column;
+    }
+}
