@@ -1,7 +1,8 @@
-# Nomad-Coders Study Repo
+# HTML + CSS + JavaScript Study Repo
 
 1. Chrome Todo App made by VanillaJS & HTML & CSS
 2. Css Layout MasterClass
+3. Digital Hanaro HTML & CSS & JS examples
 
 2023.04.17 ~
 
