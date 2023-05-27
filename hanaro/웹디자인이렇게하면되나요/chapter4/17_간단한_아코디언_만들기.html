@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../sanitize/sanitize.css" /> -->
+    <style>
+      details {
+        margin: 0 auto 10px;
+        width: 580px;
+      }
+
+      summary {
+        display: flex; /* 질문 문장과 + 아이콘을 가로로 배열하고, 기본 화살표 초기화 */
+        justify-content: space-between; /* 좌우 양 끝에 배치 */
+        align-items: center; /* 상하 중앙 배치 */
+        padding: 20px 30px;
+        font-size: 18px;
+        background-color: #d6d6d6;
+        border-radius: 10px;
+        cursor: pointer; /* 커서를 올렸을 때 pointer 표시 지정 */
+      }
+
+      summary::-webkit-details-marker {
+        /* webkit계열의 브라우저의 삼각형 화살표 초기화*/
+        display: none;
+      }
+
+      summary:hover,
+      details[open] summary {
+        background-color: #bbb;
+      }
+
+      summary::after {
+        /* + 아이콘을 의사 요소로 지정 */
+        content: "+";
+        margin-left: 30px;
+        color: #5b8f8f;
+        font-size: 21px;
+        transition: transform 0.5s; /*열릴 때의 애니메이션 지정*/
+      }
+
+      details[open] summary::after {
+        /* 열린 뒤의 + 아이콘 지정 */
+        transform: rotate(45deg); /* 45도 회전 */
+      }
+
+      .answer {
+        padding: 20px;
+        line-height: 1.6;
+      }
+
+      details[open] .answer {
+        animation: fadein 0.5s ease; /* 열린 뒤의 동작 지정 */
+      }
+
+      @keyframes fadein {
+        /* 불투명도를 0->1로 하여 페이드인 효과를 줌 */
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <details>
+      <summary>HTML만을 이용해 아코디언을 구현할 수 있을까요?</summary>
+      <div class="answer">
+        <p>
+          네. 간이 아코디언 이라면 details와 summary 태그를 이용해 구현할 수
+          있습니다.
+        </p>
+      </div>
+    </details>
+    <details>
+      <summary>HTML만을 이용해 아코디언을 구현할 수 있을까요?</summary>
+      <div class="answer">
+        <p>
+          네222. 간이 아코디언 이라면 details와 summary 태그를 이용해 구현할 수
+          있습니다.
+        </p>
+      </div>
+    </details>
+    <details>
+      <summary>HTML만을 이용해 아코디언을 구현할 수 있을까요?</summary>
+      <div class="answer">
+        <p>
+          네333. 간이 아코디언 이라면 details와 summary 태그를 이용해 구현할 수
+          있습니다.
+        </p>
+      </div>
+    </details>
+  </body>
+</html>
