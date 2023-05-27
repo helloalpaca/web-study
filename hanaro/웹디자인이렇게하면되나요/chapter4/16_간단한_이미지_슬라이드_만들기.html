@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../sanitize/sanitize.css" />
+    <style>
+      .wrap {
+        scroll-snap-type: x mandatory;
+        /* x축으로 스크롤하고, 스크롤 동작이 끝나면 스냅 포인트 위치에 맞춤 */
+        margin: 0 auto;
+        padding: 30px 0;
+        max-width: 800px;
+        white-space: nowrap; /* 행의 줄바꿈을 하지 않음 */
+        overflow-x: scroll; /* x축 방향으로 스크롤 함 */
+      }
+
+      .item {
+        scroll-snap-align: center; /* 스냅 포인트를 중앙에 지정 */
+        display: inline-block;
+        margin: 0 20px;
+        width: 40%;
+        white-space: normal; /* .wrap의 white-space 지정 해제 */
+        background-color: #f4f4f4;
+        overflow: hidden;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      p {
+        margin: 0;
+        padding: 20px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="item">
+        <img src="../images/pic216_1.jpg" alt="" />
+        <p>Sun</p>
+      </div>
+      <div class="item">
+        <img src="../images/pic216_2.jpg" alt="" />
+        <p>MON</p>
+      </div>
+      <div class="item">
+        <img src="../images/pic216_3.jpg" alt="" />
+        <p>TUE</p>
+      </div>
+      <div class="item">
+        <img src="../images/pic216_1.jpg" alt="" />
+        <p>WED</p>
+      </div>
+    </div>
+  </body>
+</html>
