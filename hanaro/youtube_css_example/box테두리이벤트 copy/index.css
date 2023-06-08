@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0e1538;
+}
+
+h2 {
+  font-size: 9em;
+  text-transform: uppercase;
+  font-family: "Open Sans Pro", sans-serif;
+  color: #00ccff;
+
+  /* background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#00ccff, #d400d4);
+  overflow: hidden;
+}
+
+.h2::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 140%;
+  background: linear-gradient(#00ccff, #d400d4);
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
