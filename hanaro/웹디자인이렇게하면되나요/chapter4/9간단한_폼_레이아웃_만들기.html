@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../sanitize/sanitize.css" />
+    <style>
+      label {
+        display: flex;
+        align-self: center; /* 상하 중앙정렬 */
+      }
+
+      /* 가장 마지막 label을 제외하고 지정 */
+      label:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        padding-right: 20px;
+        width: 220px;
+        font-weight: 700;
+      }
+
+      .title-textarea {
+        display: flex;
+        justify-content: space-between;
+        align-self: flex-start;
+        padding-top: 20px;
+        padding-right: 20px;
+        width: 220px;
+        font-weight: 700;
+      }
+
+      .required {
+        padding: 5px 10px;
+        font-size: 12px;
+        line-height: 1;
+        background-color: #7fb2a1;
+        border-radius: 10px;
+      }
+
+      input,
+      textarea {
+        display: block;
+        padding: 20px;
+        flex: 1; /* 여백을 좁히도록 flex 아이템의 폭을 지정*/
+        background-color: #e5e5e5;
+        border: 2px solid #5b8f8f;
+        border-radius: 10px;
+      }
+
+      textarea {
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <label>
+      <span class="title">이름<span class="required">필수</span></span>
+      <input type="text" name="name" required />
+    </label>
+    <label>
+      <span class="title">이메일<span class="required">필수</span></span>
+      <input type="email" name="email" required />
+    </label>
+    <label>
+      <span class="title">전화번호</span>
+      <input type="tel" name="tel" required />
+    </label>
+    <label>
+      <span class="title-textarea"
+        >문의내용<span class="required">필수</span></span
+      >
+      <textarea type="textarea" name="contact" required />
+    </label>
+  </body>
+</html>
